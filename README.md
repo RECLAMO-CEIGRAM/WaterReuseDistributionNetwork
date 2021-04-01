@@ -20,7 +20,6 @@ In the first tab of the Excel sheet the user can choose the criterion (Minimum D
 Worksheet | Line | Column | Variable_name | Units | Variable_type   
 --- | --- | --- | --- |--- |--- 
 Constants | 4 | 3 | Optimization criterion | - | text |
---- | --- | --- | --- |--- |--- 
 Constants | 8 | 3 | Water density | kg/m3 | real |
 --- | --- | --- | --- |--- |--- 
 Constants | 9 | 3 | Gravity | m/s2 | text |
