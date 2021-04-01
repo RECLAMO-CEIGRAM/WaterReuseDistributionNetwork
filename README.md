@@ -21,41 +21,26 @@ Worksheet | Line | Column | Variable_name | Units | Variable_type
 --- | --- | --- | --- |--- |--- 
 Constants | 4 | 3 | Optimization criterion | - | text |
 Constants | 8 | 3 | Water density | kg/m3 | real |
---- | --- | --- | --- |--- |--- 
 Constants | 9 | 3 | Gravity | m/s2 | text |
---- | --- | --- | --- |--- |--- 
 Constants | 13 | 3 | Pipe linear loss | m head per m legth | real |
---- | --- | --- | --- |--- |--- 
 Constants | 15 | 3 | Price of electricity | EUR/KWh | real |
---- | --- | --- | --- |--- |--- 
 Constants | 17 | 3 | Discount rate | - | real |
---- | --- | --- | --- |--- |--- 
 Constants | 18| 3 | Pipe Lifetime | years | real |
---- | --- | --- | --- |--- |--- 
 Constants | 20 | 3 | Pump efficiency | - | real |
---- | --- | --- | --- |--- |--- 
 Constants | 22 | 3 | Irrigation pressure | m of water column | real |
---- | --- | --- | --- |--- |--- 
 Constants | 24 | 3 | Pipe unit cost | EUR/m | real |
 
+**Input tab**
+The user can introduce the initial data in the input tab worksheet.
+The Water Regeneration Plant (WRP) data is introduced in the upper part of the worksheet:
+
+Worksheet | Line | Column | Variable_name | Units | Variable_type   
+--- | --- | --- | --- |--- |--- 
+Input | 8 | 3 | WRPname | - | text |
+Input | 8 | 4 | X | m | real |
+Input | 8 | 5 | Y | m| real |
+Input | 8 | 6 | Elevation | m | real |
+Input | 8 | 7 | Water Offer| m3/year | real |
 
 
 
-
-
-
-
-
-
-#Worksheet |#Line|#Column |#Variable name| #Units | #Variable type  
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
-Constants | 4 | 3 | Optimization criterion | - | text |
