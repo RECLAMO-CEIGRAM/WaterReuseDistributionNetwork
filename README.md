@@ -42,5 +42,51 @@ Input | 8 | 5 | Y | m| real |
 Input | 8 | 6 | Elevation | m | real |
 Input | 8 | 7 | Water Offer| m3/year | real |
 
+X and Y coordinates must be introduced in a Projected Coordinate System (UTM for example), and the Elevation variable is used for the head calculations. It can be introduced as elevation above sea level or above a custom reference, as long as it is consistent for all elevation data. The Water Offer variable is introduced to help the user identify how many land plots can be connected.
+
+The data of the land plots to be irrigated is introduced afterwards (one line for each land plot):
+
+Worksheet | Line | Column | Variable_name | Units | Variable_type   
+--- | --- | --- | --- |--- |--- 
+Input | starting from 13 | 2 | ClSeqNum | - | text |
+Input | starting from 13 | 3 | ClientID | - | text |
+Input | starting from 13 | 4 | X | m | real |
+Input | starting from 13 | 5 | Y | m | real |
+Input | starting from 13 | 6 | Elevation | m | real |
+Input | starting from 13 | 7 | Water Demand | m3/year | real |
+Input | starting from 13 | 8 | Benefit | EUR/year | real |
+Input | starting from 13 | 9 | Rwrp | m | real |
+
+**Output tab**
+
+Once the algorithm is run, it will create one line for each pipe, starting from line 7.
+
+Worksheet | Line | Column | Variable_name | Units | Variable_type   
+--- | --- | --- | --- |--- |--- 
+Output | 2 | starting from 7 | Pipe_num | - | integer |
+Output | 3 | starting from 7 | From(ini) | - | integer |
+Output | 4 | starting from 7 | To(end) | - | integer |
+Output | 5 | starting from 7 | X_ini | m | integer |
+Output | 6 | starting from 7 | Y_ini| m | integer |
+Output | 7 | starting from 7 | X_end| m | integer |
+Output | 8 | starting from 7 | Y_end | m | integer |
+Output | 9 | starting from 7 | Pipe length | m | integer |
+Output | 10| starting from 7 | Orientation | deg | integer |
+Output | 11| starting from 7 | Elev_ini | m | integer |
+Output | 12 | starting from 7 | Elev_end | m | integer |
+Output | 13| starting from 7 | Geom_head| m | integer |
+Output | 14 | starting from 7 | Pipe_end_Served_Area_ha| ha | integer |
+Output | 15 | starting from 7 | Pipe_end_served_volume | m3/year | integer |
+Output | 16 | starting from 7 | Pipe_end_cumulative_length| m | integer |
+Output | 17 | starting from 7 | Pipe_end_cumulative_area | ha | integer |
+Output | 18 | starting from 7 | Pipe_end_cumul_vol | m3/year | integer |
+Output | 19 | starting from 7 | Father_pipe | - | integer |
+Output | 20 | starting from 7 | parent_count | - | integer |
+
+Pipe_num is a sequential identificator for each pipe. From(ini) and To(end) identify the initial and final points of the pipe using the WRPname or the ClientID. The coordinates and elevation of initial and end points are identified, and the pipe length, orientation (0 deg for North) and geometrical head are calculated.
+
+The area and water volume consumption of the end point are calculated. For pipes where the end point is also the initial point of subsequent pipes, the cumulative served area and water volume are also calculated. Finally, the Father_pipe is identified and the number of pipes from the initial point to the WRP (parent_count) is calculated.
+
+
 
 
