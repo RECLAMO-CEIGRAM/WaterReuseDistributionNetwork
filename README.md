@@ -67,22 +67,22 @@ Once the algorithm is run, it will create one line for each pipe, starting from 
 Worksheet | Line | Column | Variable_name | Units | Variable_type   
 --- | --- | --- | --- |--- |--- 
 Output | 2 | starting from 7 | Pipe_num | - | integer |
-Output | 3 | starting from 7 | From(ini) | - | integer |
-Output | 4 | starting from 7 | To(end) | - | integer |
-Output | 5 | starting from 7 | X_ini | m | integer |
-Output | 6 | starting from 7 | Y_ini| m | integer |
-Output | 7 | starting from 7 | X_end| m | integer |
-Output | 8 | starting from 7 | Y_end | m | integer |
-Output | 9 | starting from 7 | Pipe length | m | integer |
-Output | 10| starting from 7 | Orientation | deg | integer |
-Output | 11| starting from 7 | Elev_ini | m | integer |
-Output | 12 | starting from 7 | Elev_end | m | integer |
-Output | 13| starting from 7 | Geom_head| m | integer |
-Output | 14 | starting from 7 | Pipe_end_Served_Area_ha| ha | integer |
-Output | 15 | starting from 7 | Pipe_end_served_volume | m3/year | integer |
-Output | 16 | starting from 7 | Pipe_end_cumulative_length| m | integer |
-Output | 17 | starting from 7 | Pipe_end_cumulative_area | ha | integer |
-Output | 18 | starting from 7 | Pipe_end_cumul_vol | m3/year | integer |
+Output | 3 | starting from 7 | From(ini) | - | text |
+Output | 4 | starting from 7 | To(end) | - | text |
+Output | 5 | starting from 7 | X_ini | m | real |
+Output | 6 | starting from 7 | Y_ini| m | real |
+Output | 7 | starting from 7 | X_end| m | real |
+Output | 8 | starting from 7 | Y_end | m | real |
+Output | 9 | starting from 7 | Pipe length | m | real |
+Output | 10| starting from 7 | Orientation | deg | real |
+Output | 11| starting from 7 | Elev_ini | m | real |
+Output | 12 | starting from 7 | Elev_end | m | real |
+Output | 13| starting from 7 | Geom_head| m | real |
+Output | 14 | starting from 7 | Pipe_end_Served_Area_ha| ha | real |
+Output | 15 | starting from 7 | Pipe_end_served_volume | m3/year | real |
+Output | 16 | starting from 7 | Pipe_end_cumulative_length| m | real |
+Output | 17 | starting from 7 | Pipe_end_cumulative_area | ha | real |
+Output | 18 | starting from 7 | Pipe_end_cumul_vol | m3/year | real |
 Output | 19 | starting from 7 | Father_pipe | - | integer |
 Output | 20 | starting from 7 | parent_count | - | integer |
 
