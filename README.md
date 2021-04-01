@@ -31,6 +31,7 @@ Constants | 22 | 3 | Irrigation pressure | m of water column | real |
 Constants | 24 | 3 | Pipe unit cost | EUR/m | real |
 
 **Input tab**
+
 The user can introduce the initial data in the input tab worksheet.
 The Water Regeneration Plant (WRP) data is introduced in the upper part of the worksheet:
 
@@ -41,6 +42,7 @@ Input | 8 | 4 | X | m | real |
 Input | 8 | 5 | Y | m| real |
 Input | 8 | 6 | Elevation | m | real |
 Input | 8 | 7 | Water Offer| m3/year | real |
+
 
 X and Y coordinates must be introduced in a Projected Coordinate System (UTM for example), and the Elevation variable is used for the head calculations. It can be introduced as elevation above sea level or above a custom reference, as long as it is consistent for all elevation data. The Water Offer variable is introduced to help the user identify how many land plots can be connected.
 
@@ -56,6 +58,7 @@ Input | starting from 13 | 6 | Elevation | m | real |
 Input | starting from 13 | 7 | Water Demand | m3/year | real |
 Input | starting from 13 | 8 | Benefit | EUR/year | real |
 Input | starting from 13 | 9 | Rwrp | m | real |
+
 
 **Output tab**
 
@@ -82,6 +85,7 @@ Output | 17 | starting from 7 | Pipe_end_cumulative_area | ha | integer |
 Output | 18 | starting from 7 | Pipe_end_cumul_vol | m3/year | integer |
 Output | 19 | starting from 7 | Father_pipe | - | integer |
 Output | 20 | starting from 7 | parent_count | - | integer |
+
 
 Pipe_num is a sequential identificator for each pipe. From(ini) and To(end) identify the initial and final points of the pipe using the WRPname or the ClientID. The coordinates and elevation of initial and end points are identified, and the pipe length, orientation (0 deg for North) and geometrical head are calculated.
 
