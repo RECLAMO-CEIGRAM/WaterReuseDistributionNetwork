@@ -1,4 +1,5 @@
-# WaterReuseDistributionNetwork ![alt text] (https://zenodo.org/badge/DOI/10.5281/zenodo.4662471.svg)
+# WaterReuseDistributionNetwork [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4662471.svg)](https://doi.org/10.5281/zenodo.4662471)
+
 Algorithm developed by Antonio Bolinches (antonio.bolinches@upm.es) for research project RECLAMO.
 
 The algorithm defines the optimal pipe distribution network providing regenerated water from a Water Regeneration Plant to agricultural land plots.
